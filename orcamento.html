@@ -9,8 +9,10 @@
   <title>Orçamento | Bikcraft</title>
   <meta name="description" content="Orçamento">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body id="orcamento">
@@ -31,17 +33,18 @@
   <main>
     <div class="titulo-bg">
       <div class="titulo container">
-        <p class="font-2-l-b cor-5">Cotações no seu email</p>
-        <h1 class="font-1-xxl cor-0">solicite um orçamento<span class="cor-p1">.</span></h1>
+        <p class="font-2-l-b cor-5 fadeInDown" data-anime="200">Cotações no seu email</p>
+        <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="400">solicite um orçamento<span class="cor-p1">.</span></h1>
       </div>
     </div>
 
     <form class="orcamento container" action="./">
-      <div class="orcamento-produto">
+      <div class="orcamento-produto fadeInLeft" data-anime="600">
         <h2 class="font-1-xs cor-5">Bikcraft ou Seguro?</h2>
 
         <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
         <label for="bikcraft">Bikcraft</label>
+
         <input type="radio" name="tipo" value="seguro" id="seguro">
         <label for="seguro">Seguro</label>
 
@@ -90,12 +93,13 @@
 
           <input type="radio" name="produto" value="prata" id="prata">
           <label for="prata">Prata <span>R$ 199</span></label>
+
           <input type="radio" name="produto" value="ouro" id="ouro">
           <label for="ouro">Ouro <span>R$ 299</span></label>
         </div>
       </div>
 
-      <div class="orcamento-dados form">
+      <div class="orcamento-dados form fadeInRight" data-anime="800">
         <h2 class="font-1-xs cor-9 col-2">dados pessoais</h2>
         <div>
           <label for="nome">Nome</label>
@@ -113,60 +117,35 @@
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="contato@email.com" required>
         </div>
+
         <h2 class="font-1-xs cor-9 col-2">entrega</h2>
-        <div>
-          <label for="cep">CEP</label>
-          <input type="number" id="cep" name="cep" placeholder="59500-000" required>
-        </div>
         <div>
           <label for="numero">Número</label>
           <input type="number" id="numero" name="numero" placeholder="+55 21 9999-9999" required>
         </div>
         <div>
-          <label for="logradouro">Logradouro</label>
-          <input type="text" id="logradouro" name="logradouro" placeholder="Rua, Avenida">
+          <label for="estado">Estado</label>
+          <select name="estado" id="estado">
+            <option value="estado"></option>
+          </select>
+        </div>
+        <div>
+          <label for="cidade">Cidade</label>
+          <select name="cidade" id="cidade" required>
+            <option value="cidade"></option>
+          </select>
+        </div>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="number" id="cep" name="cep" placeholder="59500-000" required>
         </div>
         <div>
           <label for="bairro">Bairro</label>
           <input type="text" id="bairro" name="bairro" required>
         </div>
         <div>
-          <label for="cidade">Cidade</label>
-          <input type="text" id="cidade" name="cidade" required>
-        </div>
-        <div>
-          <label for="estado">Estado</label>
-          <select name="estado" id="estado">
-            <option value="estado">Selecione o Estado</option>
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AP">Amapá</option>
-            <option value="AM">Amazonas</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="DF">Distrito Federal</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="GO">Goiás</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="PA">Pará</option>
-            <option value="PB">Paraíba</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SP">São Paulo</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-            <option value="EX">Estrangeiro</option>
-          </select>
+          <label for="logradouro">Logradouro</label>
+          <input type="text" id="logradouro" name="logradouro" placeholder="Rua, Avenida">
         </div>
         <button class="botao col-2">Solicitar Orçamento</button>
       </div>
@@ -204,6 +183,8 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

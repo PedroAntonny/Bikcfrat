@@ -9,8 +9,10 @@
   <title>Contato | Bikcraft</title>
   <meta name="description" content="Contato">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body id="contato">
@@ -31,13 +33,13 @@
   <main>
     <div class="titulo-bg">
       <div class="titulo container">
-        <p class="font-2-l-b cor-5">Resposta em até 24h</p>
-        <h1 class="font-1-xxl cor-0">nosso contato<span class="cor-p1">.</span></h1>
+        <p class="font-2-l-b cor-5 fadeInDown" data-anime="200">Resposta em até 24h</p>
+        <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="400">nosso contato<span class="cor-p1">.</span></h1>
       </div>
     </div>
 
     <div class="contato container">
-      <section class="contato-dados" aria-label="Endereço">
+      <section class="contato-dados fadeInLeft" aria-label="Endereço" data-anime="600">
         <h2 class="font-1-m cor-0">Loja Online</h2>
         <div class="contato-endereco font-2-s cor-4">
           <p>Rua Ali Perto, 35</p>
@@ -51,11 +53,11 @@
         </address>
         <div class="contato-redes">
           <a href="./"><img src="./img/redes/instagram-p.svg" width="24" height="24" alt="Instagram"></a>
-          <a href="./"><img src="./img/redes/facebook-p.svg" width="24" height="24"  alt="Facebook"></a>
-          <a href="./"><img src="./img/redes/youtube-p.svg" width="24" height="24"  alt="Youtube"></a>
+          <a href="./"><img src="./img/redes/facebook-p.svg" width="24" height="24" alt="Facebook"></a>
+          <a href="./"><img src="./img/redes/youtube-p.svg" width="24" height="24" alt="Youtube"></a>
         </div>
       </section>
-      <section class="contato-formulario" aria-label="Formulário">
+      <section class="contato-formulario fadeInRight" aria-label="Formulário" data-anime="800">
         <form class="form" action="./contato.html">
           <div>
             <label for="nome">Nome</label>
@@ -109,7 +111,7 @@
           <a href="mailto:sp@bikcraft.com">sp@bikcraft.com</a>
           <a href="tel:+551199999999">+55 11 9999-9999</a>
         </div>
-        <p class="lojas-tempo font-1-s"><img src="./img/icones/horario.svg" width="20" height="20"  alt="">08-18h de seg à dom</p>
+        <p class="lojas-tempo font-1-s"><img src="./img/icones/horario.svg" width="20" height="20" alt="">08-18h de seg à dom</p>
       </div>
     </div>
   </article>
@@ -145,6 +147,8 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

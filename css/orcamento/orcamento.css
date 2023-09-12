@@ -156,7 +156,7 @@ select {
   font: 400 1rem/1.5 "Roboto", sans-serif;
   background: var(--cor-1);
   border: 1px solid var(--cor-2);
-  padding: 13.5px;
+  padding: 12px;
   border-radius: 4px;
   width: 100%;
   box-sizing: border-box;
@@ -193,5 +193,3 @@ select {
     grid-template-columns: 1fr;
   }
 }
-
-/* Colocar um campo de select em estado e cidade*/

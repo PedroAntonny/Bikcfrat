@@ -9,7 +9,10 @@
   <title>Nimbus Stark | Bikcraft</title>
   <meta name="description" content="Nimbus Stark">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../css/style.min.css" as="style">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body id="bicicleta">
@@ -30,21 +33,21 @@
   <main class="titulo-bg">
     <div>
       <div class="titulo container">
-        <p class="font-2-xl cor-5">R$ 4999</p>
-        <h1 class="font-1-xxl cor-0">Nimbus Stark<span class="cor-p1">.</span></h1>
+        <p class="font-2-xl cor-5 fadeInDown" data-anime="200">R$ 4999</p>
+        <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="400">Nimbus Stark<span class="cor-p1">.</span></h1>
       </div>
     </div>
     <div class="bicicleta container">
-      <div class="bicicleta-imagens">
+      <div class="bicicleta-imagens fadeInLeft" data-anime="600">
         <img src="../img/bicicleta/nimbus1.jpg" width="1120" height="880" alt="Bicicleta Preta">
         <img src="../img/bicicleta/nimbus2.jpg" width="1120" height="880" alt="Bicicleta Preta larga">
-        <img src="../img/bicicleta/nimbus3.jpg" width="1120" height="880"  alt="Bicicleta Branca">
+        <img src="../img/bicicleta/nimbus3.jpg" width="1120" height="880" alt="Bicicleta Branca">
       </div>
-      <div class="bicicleta-conteudo">
+      <div class="bicicleta-conteudo fadeInRight" data-anime="800">
         <p class="font-2-l cor-5">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
         <div class="bicicleta-comprar">
-          <a class="botao" href="../orcamento.html">Comprar Agora</a>
-          <span class="font-1-xs cor-6"><img src="../img/icones/entrega.svg" width="16" height="16"  alt=""> entrega em 5 dias</span>
+          <a class="botao" href="../orcamento.html?tipo=bikcraft&produto=nimbus">Comprar Agora</a>
+          <span class="font-1-xs cor-6"><img src="../img/icones/entrega.svg" width="16" height="16" alt=""> entrega em 5 dias</span>
           <span class="font-1-xs cor-6"><img src="../img/icones/estoque.svg" width="16" height="16" alt=""> 18 em estoque</span>
         </div>
 
@@ -149,6 +152,8 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="../js/plugins/simple-anime.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
