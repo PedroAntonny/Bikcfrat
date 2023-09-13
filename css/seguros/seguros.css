@@ -7,8 +7,8 @@
   padding-bottom: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
   align-items: center;
+  gap: 40px;
 }
 
 #seguros .seguros {
@@ -20,11 +20,11 @@
 }
 
 .seguros-item {
-  background: var(--cor-12);
   padding: 32px 32px 32px 60px;
   display: grid;
   grid-template-columns: 1fr auto;
   border-radius: 4px;
+  background: var(--cor-12);
 }
 
 .seguros-item h3 {

@@ -5,8 +5,8 @@
 }
 
 .form label {
-  display: block;
   font: 400 1rem/1.5 "Poppins", sans-serif;
+  display: block;
   margin-bottom: 4px;
 }
 
@@ -18,13 +18,13 @@
 .form input[type="email"],
 .form input[type="number"],
 .form textarea {
-  font: 400 1rem/1.5 "Roboto", sans-serif;
-  background: var(--cor-1);
-  border: 1px solid var(--cor-2);
   padding: 12px;
-  border-radius: 4px;
+  font: 400 1rem/1.5 "Roboto", sans-serif;
   width: 100%;
   box-sizing: border-box;
+  border-radius: 4px;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
 }
 
 .form input[type="text"]:focus,
@@ -32,8 +32,8 @@
 .form input[type="number"]:focus,
 .form textarea:focus {
   outline: none;
-  border-color: var(--cor-p1);
   background: var(--cor-0);
+  border-color: var(--cor-p1);
   box-shadow: 0 0 0 2px #fea;
 }
 

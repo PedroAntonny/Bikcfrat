@@ -1,10 +1,10 @@
 .bicicleta {
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: 40px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 #bicicleta .titulo p {
@@ -47,9 +47,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: var(--cor-12);
   padding: 4px 8px;
   border-radius: 4px;
+  background-color: var(--cor-12);
 }
 
 .bicicleta-conteudo h2 {
@@ -61,15 +61,15 @@
 .bicicleta-informacoes,
 .bicicleta-ficha {
   padding: 32px;
-  background: var(--cor-12);
   border-radius: 4px;
+  background: var(--cor-12);
 }
 
 .bicicleta-informacoes {
-  margin-bottom: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+  margin-bottom: 40px;
 }
 
 .bicicleta-informacoes img {

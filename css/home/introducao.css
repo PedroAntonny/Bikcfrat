@@ -10,8 +10,8 @@
 }
 
 .introducao-conteudo {
-  align-self: end;
   padding-bottom: 200px;
+  align-self: end;
 }
 
 .introducao img {
@@ -31,8 +31,8 @@
 
 @media (max-width: 800px) {
   .introducao-bg {
-    background: var(--cor-11);
     padding-top: 40px;
+    background: var(--cor-11);
     box-shadow: inset 0 -60px var(--cor-0);
   }
   .introducao {

@@ -1,9 +1,9 @@
 .lojas {
+  padding-top: 120px;
+  padding-bottom: 120px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 40px;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .lojas h2 {
@@ -22,10 +22,10 @@
 }
 
 .lojas-conteudo {
+  padding: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px 16px;
-  padding: 32px;
 }
 
 .lojas-conteudo h3 {
@@ -36,10 +36,10 @@
 .lojas-conteudo h3::before {
   content: '';
   display: inline-block;
-  height: 10px;
   width: 12px;
-  margin-right: 8px;
+  height: 10px;
   background: var(--cor-p1);
+  margin-right: 8px;
 }
 
 .lojas-conteudo h3,
@@ -48,10 +48,10 @@
 }
 
 .lojas-dados {
+  padding-left: 12px;
   display: grid;
   gap: 8px;
   border-left: 2px solid var(--cor-2);
-  padding-left: 12px;
 }
 
 .lojas-tempo {
@@ -62,9 +62,9 @@
 
 @media (max-width: 800px) {
   .lojas {
-    gap: 20px;
     padding-top: 60px;
     padding-bottom: 60px;
+    gap: 20px;
   }
   .lojas h2 {
     margin-bottom: 32px;

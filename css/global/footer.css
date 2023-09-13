@@ -3,11 +3,11 @@
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: grid;
   grid-template-columns: 3fr 5fr 4fr;
   gap: 40px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer h3 {

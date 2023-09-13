@@ -20,12 +20,12 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
+  text-align: left;
+  width: 100%;
   gap: 8px;
-  cursor: pointer;
   border: none;
   background: none;
-  width: 100%;
-  text-align: left;
+  cursor: pointer;
 }
 
 .perguntas button::before {
