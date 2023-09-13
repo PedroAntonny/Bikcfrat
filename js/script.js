@@ -70,36 +70,39 @@ if (window.SimpleAnime) {
   new SimpleAnime()
 }
 
-// Cidade & Estado
+// Cidades & Estados
 
-const urlES = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados'
-const cidade = document.getElementById('cidade')
-const estado = document.getElementById('estado')
+const urlES = "https://servicodados.ibge.gov.br/api/v1/localidades/estados"
+const cidade = document.getElementById("cidade")
+const estado = document.getElementById("estado")
+const optionRemove = document.getElementById("optionRemove")
 
-
-estado.addEventListener('change', async function(){
+estado.addEventListener("change", async function () {
   const urlCidades =
-    'https://servicodados.ibge.gov.br/api/v1/localidades/estados/'+estado.value+'/municipios'
-    const request = await fetch(urlCidades)
-    const response = await request.json()
+    "https://servicodados.ibge.gov.br/api/v1/localidades/estados/" +
+    estado.value +
+    "/municipios"
+  const request = await fetch(urlCidades)
+  const response = await request.json()
 
-    let options = ''
-    response.forEach(function(cidades) {
-      options += '<option>'+cidades.nome+'</option>'
-    })
+  let options = ""
+  response.forEach(function (cidades) {
+    options += "<option>" + cidades.nome + "</option>"
+  })
 
-    cidade.innerHTML = options
+  cidade.innerHTML = options
 })
 
-window.addEventListener('load', async ()=> {
+window.addEventListener("load", async () => {
   const request = await fetch(urlES)
   const response = await request.json()
-  
-  // console.log(response[26].sigla)
+
   const options = document.createElement("optgroup")
-  options.setAttribute('label','Escolha seu Estado' )
-  response.forEach(function(estado){
-    options.innerHTML += '<option>'+estado.sigla+'</option>'
+  optionRemove.remove()
+  options.setAttribute("label", "Escolha seu Estado")
+  response.forEach(function (estado) {
+    options.innerHTML +=
+      `<option value="${estado.sigla}">` + estado.nome + `</option>`
   })
 
   estado.append(options)
